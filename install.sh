@@ -1,9 +1,6 @@
 #!/bin/sh
 mkdir -p ~/.bin
 
-[ ! -d /usr/local/Homebrew ] && netsh -f install.sh gh://Homebrew/install
-[ ! -f /opt/local/bin/port ] && netpkg "$MACPORTS"
-
 sudo pacman -Syu
 sudo pacman -S cockpit
 sudo pacman -S yay

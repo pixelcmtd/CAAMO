@@ -228,6 +228,8 @@ alias gl='git pull'
 alias gp='git push -v'
 alias gs='git status'
 
+export GIT_ASKPASS='/usr/bin/ksshaskpass'
+
 command -v pfetch >/dev/null && pfetch
 
 true

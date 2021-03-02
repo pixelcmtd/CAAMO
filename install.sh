@@ -74,6 +74,8 @@ yay -S spotify
 yay -S 1password
 yay -S ftba
 yay -S feed-the-beast-classic
+yay -S minecraft-launcher
+yay -S tetrio-desktop
 yay -S imlib2-heic
 yay -S pfetch
 yay -S neofetch

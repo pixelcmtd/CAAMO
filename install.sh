@@ -60,16 +60,15 @@ sudo pacman -S fd
 sudo pacman -S gradle
 sudo pacman -S vbindiff
 sudo pacman -S binwalk
-sudo pacman -S texlive
+sudo pacman -S texlive-core
 sudo pacman -S ninja
 sudo pacman -S meson
 sudo pacman -S signal-desktop
 sudo pacman -S discord
 sudo pacman -S dropbear
 sudo pacman -S dart
-sudo pacman -S flutter
 
-yay -S davinci-resolve-studio
+yay -S flutter
 yay -S spotify
 yay -S 1password
 yay -S ftba
@@ -79,10 +78,10 @@ yay -S tetrio-desktop
 yay -S imlib2-heic
 yay -S pfetch
 yay -S neofetch
-yay -S brew
 yay -S flashprint
 yay -S arduino
 yay -S ghidra
+yay -S davinci-resolve-studio
 
 sudo systemctl enable --now dropbear
 

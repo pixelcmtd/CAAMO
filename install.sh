@@ -19,3 +19,5 @@ sudo systemctl enable --now dropbear
 cp -f zshrc "$HOME/.zshrc"
 cp -f zshtheme "$HOME/.zshtheme"
 cp -f vimrc "$HOME/.vimrc"
+
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0

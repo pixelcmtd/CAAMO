@@ -104,8 +104,6 @@ function colored() {
 }
 function man() { colored man "$@" ; }
 
-function command_not_found_handler { /usr/lib/command-not-found -- "$1" && : ; }
-
 encode64() { { [ $# -ne 0 ] && echo "$@" || cat ; } | base64 ; }
 decode64() { { [ $# -ne 0 ] && echo "$@" || cat ; } | base64 -d ; }
 
@@ -180,7 +178,7 @@ e()    ($EDITOR $(ls | fzf))
 E()    (sudo $EDITOR $(ls | fzf))
 uzip() (unzip -d "$(echo "$1" | sed s/\.zip//g -)" "$1")
 sd()   (sudo shutdown $@ now)
-alias m='make'
+alias m='make -j$(nproc)'
 alias mt='make test'
 alias mi='sudo make install'
 alias o='xdg-open'
@@ -229,6 +227,11 @@ alias gp='git push -v'
 alias gs='git status'
 
 export GIT_ASKPASS='/usr/bin/ksshaskpass'
+
+export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/fvm/versions/stable/bin"
+
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
 
 command -v pfetch >/dev/null && pfetch
 

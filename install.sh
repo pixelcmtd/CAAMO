@@ -1,4 +1,6 @@
 #!/bin/sh
+set -uxe
+
 mkdir -p ~/.bin ~/.local/bin
 
 sudo pacman -Syu
@@ -11,10 +13,13 @@ sudo systemctl enable --now dropbear
 # configuration
 #
 
-./vim
-
 cp -f zshrc "$HOME/.zshrc"
 cp -f zshtheme "$HOME/.zshtheme"
-cp -f vimrc "$HOME/.vimrc"
+
+cd
+git clone https://github.com/pixelcmtd/dotfiles.git
+cd dotfiles
+cp -f vimrc ~/.vimrc
+./vim-plugins
 
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0

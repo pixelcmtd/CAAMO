@@ -1,10 +1,7 @@
 #!/bin/sh
-mkdir -p ~/.bin
+mkdir -p ~/.bin ~/.local/bin
 
 sudo pacman -Syu
-sudo pacman -S $(cat pacman_packs) || \
-    for p in $(cat pacman_packs) ; do sudo pacman -S $p ; done
-
 yay -S $(cat yay_packs) || \
     for p in $(cat yay_packs) ; do yay -S $p ; done
 

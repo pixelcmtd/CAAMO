@@ -1,5 +1,7 @@
 1password
+smb4k
 apple-fonts
+patch
 arduino
 atop
 autoconf
@@ -28,7 +30,6 @@ fakeroot
 fd
 feh
 figlet
-flashprint
 flex
 flutter
 freecad
@@ -43,11 +44,10 @@ graphviz
 guile
 icdiff
 imagemagick
-imlib2-heic
 iotop
 iperf3
 ipython
-jdk15-openjdk
+jdk-openjdk
 jdk8-openjdk
 jq
 kicad
@@ -71,7 +71,6 @@ pandoc
 pfetch
 progress
 qrencode
-raspberry-pi-imager
 ruby
 rust
 signal-desktop
@@ -86,7 +85,6 @@ unrar
 vala
 vbindiff
 w3m
-wine
 wine-staging
 xclip
 xsane

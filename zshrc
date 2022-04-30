@@ -1,5 +1,5 @@
 export LANG=en_US.UTF-8
-export EDITOR=vim
+export EDITOR=nvim
 export VISUAL=$EDITOR
 export PAGER='less'
 export ARCHFLAGS="-arch x86_64"

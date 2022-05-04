@@ -9,17 +9,6 @@ yay -S $(cat yay_packs) || \
 
 sudo systemctl enable --now dropbear
 
-#
 # configuration
-#
-
-cp -f zshrc "$HOME/.zshrc"
-cp -f zshtheme "$HOME/.zshtheme"
-
-cd
-git clone https://github.com/pixelcmtd/dotfiles.git
-cd dotfiles
-cp -f vimrc ~/.vimrc
-./vim-plugins
-
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
+cp -f env ~/.env
+curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s vim zsh

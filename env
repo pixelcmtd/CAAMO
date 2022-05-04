@@ -1,0 +1,25 @@
+#!/bin/sh
+export LANG=C
+export EDITOR=nvim
+export VISUAL=$EDITOR
+export VEDITOR=$EDITOR
+export PAGER=moar
+export TERM=xterm-256color
+export OPENER=xdg-open
+export LS_COLORS=
+
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/fvm/versions/stable/bin"
+export PATH="$PATH:$HOME/tldrgal"
+export PATH="$PATH:$HOME/go/bin"
+
+export CFLAGS="-O3 -mcpu=native -mtune=native -Wall -Wextra"
+export CXXFLAGS="$CFLAGS"
+export LDFLAGS="$CFLAGS -flto"
+export PREFIX="$HOME/.local"
+
+export CARP_DIR=~/Carp/

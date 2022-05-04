@@ -1,2 +1,4 @@
 # CAAMO
-chrissx' Arch and Manjaro OS
+
+Archived. CAAMO has been merged into
+[`dotfiles`](https://github.com/pixelcmtd/dotfiles).
